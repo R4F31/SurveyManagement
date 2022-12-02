@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SurveyManagement</string>
+    <string name="titul">jetsurvey</string>
+    <string name="subtitol">Exam App that implements a Surveys</string>
+    <string name="inici">Sign in or create an account</string>
+    <string name="Email">Email</string>
+    <string name="bton_Continue">Continue</string>
+    <string name="bton_Sing_in">Sign in as guest</string>
+    <string name="or">or</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="next">Next</string>
+    <string name="previus">Previus</string>
+
+</resources>
