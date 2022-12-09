@@ -90,6 +90,7 @@
             android:paddingVertical="20dp"
             android:text="Read"
             android:textStyle="bold"
+
             />
 
         <com.google.android.material.checkbox.MaterialCheckBox

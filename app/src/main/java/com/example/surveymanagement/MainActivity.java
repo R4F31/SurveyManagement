@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.surveymanagement.databinding.ActivityMainBinding;
@@ -18,10 +19,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
+
+
         binding.btonContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String correo = binding.inputText.getText().toString();
                 Intent intent = new Intent(getApplicationContext(),Screen2.class);
+                intent.putExtra("correo",correo);
+                Log.i("Correo", correo);
+
                 startActivity(intent);
             }
         });
@@ -29,9 +36,15 @@ public class MainActivity extends AppCompatActivity {
         binding.btonSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String correo = binding.inputText.getText().toString();
                 Intent intent = new Intent(getApplicationContext(),Screen2.class);
+                intent.putExtra("correo",correo);
+                startActivity(intent);
+
             }
         });
+
+
 
     }
 }
